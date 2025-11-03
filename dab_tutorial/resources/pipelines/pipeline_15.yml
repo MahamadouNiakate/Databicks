@@ -1,0 +1,16 @@
+resources:
+  pipelines:
+    pipeline_15_pipeline_new_correction:
+      name: 15_Pipeline_new_correction
+      libraries:
+        - glob:
+            include: /../../src/15_Pipeline_new_correction/transformations/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: databricksmaha
+      serverless: true
+      root_path: /../../src/15_Pipeline_new_correction
+
